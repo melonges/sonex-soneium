@@ -3,6 +3,9 @@
     "UniswapV3Pool": {
       "address": "0xe15bD143D36E329567aE9A176682AB9fAFc9C3D2",
       "startBlock": 1853121
+    },
+    "SwapRouter": {
+      "address": "0xDEf357D505690F1b0032a74C3b581163c23d1535"
     }
   }
 }
