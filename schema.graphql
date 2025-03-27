@@ -1,41 +1,11 @@
-type Burn @entity(immutable: true) {
-  id: Bytes!
-  owner: Bytes! # address
-  tickLower: Int! # int24
-  tickUpper: Int! # int24
-  amount: BigInt! # uint128
-  amount0: BigInt! # uint256
-  amount1: BigInt! # uint256
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
-}
-
-type Mint @entity(immutable: true) {
-  id: Bytes!
-  sender: Bytes! # address
-  owner: Bytes! # address
-  tickLower: Int! # int24
-  tickUpper: Int! # int24
-  amount: BigInt! # uint128
-  amount0: BigInt! # uint256
-  amount1: BigInt! # uint256
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
-}
-
 type Swap @entity(immutable: true) {
   id: Bytes!
+  contract: Bytes! # address
   sender: Bytes! # address
   recipient: Bytes! # address
   amount0: BigInt! # int256
   amount1: BigInt! # int256
-  sqrtPriceX96: BigInt! # uint160
-  liquidity: BigInt! # uint128
-  tick: Int! # int24
   blockNumber: BigInt!
   blockTimestamp: BigInt!
   transactionHash: Bytes!
-  tx_sender: Bytes! # address
 }
